@@ -11,6 +11,13 @@ This is a quick run-through of the python programming language. I hope to focus 
 
 - It's recommended [here](https://www.youtube.com/watch?v=XlvfHOrF26M) to learn assembly, c and python, to get a feel for the abstractions going on when talking to a computer via a typical scripting language. 
 
+### In this repo
+
+- README.md is a basic python crash course in one page
+- [learn-python-the-hard-way.md](learn-python-the-hard-way.md) is some notes on learn python the hard way ebook
+- [pandas.md](pandas.md) is a crash course on pandas (possibly also numpy)
+- [pytorch.md](pytorch.md) is a crash course on pytorch
+
 
 
 # Syntax
