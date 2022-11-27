@@ -34,10 +34,12 @@ pet = "dog"
 f"my pet {avariable}"
 # 'my pet dog'
 
+# Another way is to use .format()
+print("Its fleece was white as {}.".format('snow'))
+Its fleece was white as snow.
 
-
-
-
+print("." * 10)
+..........
 
 
 
@@ -48,12 +50,13 @@ f"my pet {avariable}"
 
 
 
-MY TODO LIST
-How to tell an object's class/type
-how to convert "5" to interger, float
-How to define a dict/hash, or whatever it's called
-How to look up documentation for a method (e.g. .format())
-Is there an interactive debugger? 
+MY TODO LISTi
+
+- How to tell an object's class/type
+- how to convert "5" to interger, float
+- How to define a dict/hash, or whatever it's called
+- How to look up documentation for a method (e.g. .format())
+- Is there an interactive debugger? 
 
 
 
