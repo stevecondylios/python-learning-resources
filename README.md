@@ -7,29 +7,30 @@
 - [pytorch.md](pytorch.md) is a crash course on pytorch
 
 
-### Goals of this repo (dwd)
-
-This is a quick run-through of the python programming language. I hope to focus on:
-
-1. Fundamentals: how to do basic things, syntax. 
-2. The system: where to get docs, how to debug etc 
-3. Data Science libraries and tooling: namely pandas, numpy and pytorch.
-  - An MRE of a workflow for each of those three (pandas, numpy and pytorch) would be great
 
 
-### Intro and resources
+### Resources
 
 - It's recommended [here](https://www.youtube.com/watch?v=XlvfHOrF26M) to learn assembly, c and python, to get a feel for the abstractions going on when talking to a computer via a typical scripting language. 
+- Useful python command-line utilities [here](https://news.ycombinator.com/item?id=40567532). 
+  - E.g. `python -m timeit 'sum([list(range(1000))] * 50, [])'` times any python string. Many more.
+  - 
 
 
 
-# Syntax
+# Environment & Setup
+
+From [here](https://news.ycombinator.com/item?id=40568602):
+
+> My favorite and probably most useful? `python3 -m venv ./venv` Honestly, forget about conda, poetry, virtualenvwrapper etc and just use that one.
 
 
 
 
 
+# Syntax Basics
 
+`l<goes here>`
 
 
 
@@ -75,4 +76,30 @@ Why are they called list comprehensions (from chatgpt convo above)?
 > The term "list comprehension" comes from the mathematical concept of set comprehension, which is used in set theory to define sets based on existing sets. In mathematics, set comprehensions allow the creation of a new set by applying a condition and/or transformation to each element of an existing set.
 
 > Python's list comprehensions extend this idea to lists, allowing elements to be dynamically generated and optionally filtered by a concise, expressive syntax. By adopting the term "comprehension," Python emphasizes the idea of constructing a new list by comprehensively processing each element of an existing iterable according to specified rules or expressions.
+
+
+
+
+
+# Quirks and gotchas
+
+
+- Interesting chat [here](https://news.ycombinator.com/item?id=40630059), [here](https://stackoverflow.com/questions/1132941/the-mutable-default-argument-in-python)
+
+```python
+def foo(a=[]):
+    a.append(5)
+    return a
+
+foo()
+# [5]
+foo()
+# [5, 5]
+foo()
+# [5, 5, 5]
+foo()
+# [5, 5, 5, 5]
+foo()
+```
+
 
