@@ -20,9 +20,54 @@
 
 # Environment & Setup
 
+### How to set up a virtual environment
+
+
 From [here](https://news.ycombinator.com/item?id=40568602):
 
+<hr>
+
 > My favorite and probably most useful? `python3 -m venv ./venv` Honestly, forget about conda, poetry, virtualenvwrapper etc and just use that one.
+
+<hr>
+
+Start a python [virtual env](https://docs.python.org/3/library/venv.html). The reason is because macOS comes with python and the virtual env stops them messing with eachother. My first impression is python virtual envs seem similar to ruby's bundler in that it will use the ruby (python) installation it finds for the project and only if it doesn't see one will it use the system one.
+
+
+```sh
+# the last argument is the directory name where the virtual env will go
+python -m venv .venv 
+
+# Check that it worked (should see a hidden directory called .venv)
+ls -a
+
+# activate it
+source .venv/bin/activate
+# Should see command prompt change to (.venv) (base)
+
+
+# now that it's activated, run this to confirm 
+which python
+
+# It should return something like
+# /Users/st/python/myproject/.venv/bin/python
+# and not any other python installation like 
+# /Users/st/opt/anaconda3/bin/python
+
+
+# You can tell a python virtual environment is active because the command prompt will look like this
+# (venv) (base)
+# You can deactivate it with
+deactivate
+
+# Now when you use pip or pip3, it will use the correct (vitual env) version of python
+
+
+```
+
+
+
+
 
 
 
