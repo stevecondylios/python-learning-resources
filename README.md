@@ -62,7 +62,6 @@ deactivate
 
 # Now when you use pip or pip3, it will use the correct (vitual env) version of python
 
-
 ```
 
 
@@ -75,7 +74,7 @@ deactivate
 
 # Syntax Basics
 
-`l<goes here>`
+
 
 
 
