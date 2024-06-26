@@ -1,4 +1,18 @@
 
+
+### On python
+
+Lex ([here](https://www.youtube.com/watch?v=pdJQ8iVTwj8&t=10m20s)):
+
+> what do I love about python? how intuitive it is, how it feels like natural language, how I can read and understand other people's code, it's more condenced than c++ and c, there's a bunch of little features (e.g. list comprehensions), it's package ecosystem and the humans involved.
+
+Chris lattner:
+
+> python is the universal connector
+
+
+
+
 ### In this repo
 
 - README.md is a basic python crash course in one page
@@ -61,7 +75,7 @@ which python
 deactivate
 
 # Now when you use pip or pip3, it will use the correct (vitual env) version of python
-
+# Note that you'll have to install things for each new virtual environment
 ```
 
 
