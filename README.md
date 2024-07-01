@@ -1,6 +1,6 @@
 
 
-### On python
+### Why python?
 
 Lex ([here](https://www.youtube.com/watch?v=pdJQ8iVTwj8&t=10m20s)):
 
@@ -29,6 +29,16 @@ Chris lattner:
 - Useful python command-line utilities [here](https://news.ycombinator.com/item?id=40567532). 
   - E.g. `python -m timeit 'sum([list(range(1000))] * 50, [])'` times any python string. Many more.
   - 
+
+
+
+# Installation
+
+- Derek recommends installing via brew.
+- `python3` to run
+- Note that [Brew](https://docs.brew.sh/Homebrew-and-Python) also installs pip3
+- so tl;dr: install via brew, then you'll have python3 and pip3 available via the command line
+
 
 
 
