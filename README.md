@@ -90,6 +90,9 @@ deactivate
 
 
 
+# Tooling
+
+- A couple of times in [this](https://www.youtube.com/watch?v=l8pRSuU81PU) video, Karpathy uses 'break' which I think is a vscode command pallet item (as opposed to code like `binding.pry` or `browser()`)
 
 
 
