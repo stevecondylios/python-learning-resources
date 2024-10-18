@@ -44,6 +44,13 @@ Chris lattner:
 
 # Environment & Setup
 
+- sc: I think you can install python packages via brew (just as you can with pip), but for whatever reason python could never find them ie. `import xyz` would fail. So my 'go to' is a virtual env every time and then use pip.
+- sc: if you want to use a python version other than the latest installed via brew, try running `brew search python@` to see what python versions are installed via brew. Then you can run commands (or start the interpreter) using `python3.11` (or whatever version you have, note no @ symbol when using it in the terminal).
+  - I then used `python3.11 -m venv .venv` etc to create the virtual env as per below but using `python3.11` in place of `python`. 
+    - This approach was handly when I was getting errors using `openai-whisper` package with the latest python version `3.13`
+
+
+
 ### How to set up a virtual environment
 
 
