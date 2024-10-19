@@ -48,7 +48,7 @@ Chris lattner:
 - sc: if you want to use a python version other than the latest installed via brew, try running `brew search python@` to see what python versions are installed via brew. Then you can run commands (or start the interpreter) using `python3.11` (or whatever version you have, note no @ symbol when using it in the terminal).
   - I then used `python3.11 -m venv .venv` etc to create the virtual env as per below but using `python3.11` in place of `python`. 
     - This approach was handly when I was getting errors using `openai-whisper` package with the latest python version `3.13`
-
+    - Here's a guide to which version of python is most recent and which are getting old: https://devguide.python.org/versions/
 
 
 ### How to set up a virtual environment
