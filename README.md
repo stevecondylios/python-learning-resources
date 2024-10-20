@@ -35,6 +35,7 @@ Chris lattner:
 # Installation
 
 - Derek recommends installing via brew.
+    - More specifics on my learnings under [Environment & Setup](#environment--setup)
 - `python3` to run
 - Note that [Brew](https://docs.brew.sh/Homebrew-and-Python) also installs pip3
 - so tl;dr: install via brew, then you'll have python3 and pip3 available via the command line
@@ -45,8 +46,8 @@ Chris lattner:
 # Environment & Setup
 
 - sc: I think you can install python packages via brew (just as you can with pip), but for whatever reason python could never find them ie. `import xyz` would fail. So my 'go to' is a virtual env every time and then use pip.
-- sc: if you want to use a python version other than the latest installed via brew, try running `brew search python@` to see what python versions are installed via brew. Then you can run commands (or start the interpreter) using `python3.11` (or whatever version you have, note no @ symbol when using it in the terminal).
-  - I then used `python3.11 -m venv .venv` etc to create the virtual env as per below but using `python3.11` in place of `python`. 
+- sc: if you want to use a python version other than the latest installed via brew, try running `brew search python@` to see what python versions are installed via brew. Then you can run commands (or start the interpreter) using `python3.11` (or whatever version you have, note no @ symbol when using it in the terminal). (also note, you can install any specific python version with brew by `brew install python@3.14` - I'm 99% sure)
+  - I then used `python3.11 -m venv .venv` etc to create the virtual env as per below but using `python3.11` in place of `python`.
     - This approach was handly when I was getting errors using `openai-whisper` package with the latest python version `3.13`
     - Here's a guide to which version of python is most recent and which are getting old: https://devguide.python.org/versions/
 
