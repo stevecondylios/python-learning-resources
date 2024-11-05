@@ -98,6 +98,16 @@ deactivate
 
 
 
+Notes
+
+- Don't commit .venv to git. Instead use `pip freeze > requirements.txt` (**note*: venv has to be activated or else `pip freeze` will include very package on your *system* python, which you don't want).
+- Omit .venv from git with `echo "**/.venv" >> .gitignore`
+- Install packages from requirement.txt with `pip install --requirement requirements.txt`
+- Note that `source .venv/bin/activate` seems to contain some paths which had to be modified manually when I rearranged a repo.
+
+
+
+
 # Tooling
 
 - A couple of times in [this](https://www.youtube.com/watch?v=l8pRSuU81PU) video, Karpathy uses 'break' which I think is a vscode command pallet item (as opposed to code like `binding.pry` or `browser()`)
