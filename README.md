@@ -28,7 +28,7 @@ Chris lattner:
 - It's recommended [here](https://www.youtube.com/watch?v=XlvfHOrF26M) to learn assembly, c and python, to get a feel for the abstractions going on when talking to a computer via a typical scripting language. 
 - Useful python command-line utilities [here](https://news.ycombinator.com/item?id=40567532). 
   - E.g. `python -m timeit 'sum([list(range(1000))] * 50, [])'` times any python string. Many more.
-  - 
+- Random reading on duckdb vs pandas/polars [here](https://www.pgrs.net/2024/11/01/duckdb-over-pandas-polars/) 
 
 
 
