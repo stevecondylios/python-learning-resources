@@ -25,10 +25,10 @@ Chris lattner:
 
 ### Resources
 
-- It's recommended [here](https://www.youtube.com/watch?v=XlvfHOrF26M) to learn assembly, c and python, to get a feel for the abstractions going on when talking to a computer via a typical scripting language. 
-- Useful python command-line utilities [here](https://news.ycombinator.com/item?id=40567532). 
+- It's recommended [here](https://www.youtube.com/watch?v=XlvfHOrF26M) to learn assembly, c and python, to get a feel for the abstractions going on when talking to a computer via a typical scripting language.
+- Useful python command-line utilities [here](https://news.ycombinator.com/item?id=40567532).
   - E.g. `python -m timeit 'sum([list(range(1000))] * 50, [])'` times any python string. Many more.
-- Random reading on duckdb vs pandas/polars [here](https://www.pgrs.net/2024/11/01/duckdb-over-pandas-polars/) 
+- Random reading on duckdb vs pandas/polars [here](https://www.pgrs.net/2024/11/01/duckdb-over-pandas-polars/)
 
 
 
@@ -68,9 +68,15 @@ Start a python [virtual env](https://docs.python.org/3/library/venv.html). The r
 
 ```sh
 # the last argument is the directory name where the virtual env will go
-python -m venv .venv 
+
+python -m venv .venv
+
+# Note: might be python3 depending on the system
+
+python3 -m venv .venv
 
 # Check that it worked (should see a hidden directory called .venv)
+
 ls -a
 
 # activate it
@@ -78,12 +84,12 @@ source .venv/bin/activate
 # Should see command prompt change to (.venv) (base)
 
 
-# now that it's activated, run this to confirm 
+# now that it's activated, run this to confirm
 which python
 
 # It should return something like
 # /Users/st/python/myproject/.venv/bin/python
-# and not any other python installation like 
+# and not any other python installation like
 # /Users/st/opt/anaconda3/bin/python
 
 
@@ -125,9 +131,9 @@ Notes
 
 # Classes
 
-Show how to define a class etc. 
+Show how to define a class etc.
 
-Python supports [multiple inheritance](https://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance). When using `super()` in a child of a class which inherits from multiple parent classes, python uses the [Method Resolution Order](http://python-history.blogspot.com/2010/06/method-resolution-order.html) (MRO) to determine which method is called (more [here](https://stackoverflow.com/a/3277407)).  
+Python supports [multiple inheritance](https://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance). When using `super()` in a child of a class which inherits from multiple parent classes, python uses the [Method Resolution Order](http://python-history.blogspot.com/2010/06/method-resolution-order.html) (MRO) to determine which method is called (more [here](https://stackoverflow.com/a/3277407)).
 
 
 
@@ -138,9 +144,9 @@ Python supports [multiple inheritance](https://stackoverflow.com/questions/32773
 
 ### List comprehensions
 
-- [Lex](https://www.youtube.com/watch?v=t5CcNJx5qtM): 
+- [Lex](https://www.youtube.com/watch?v=t5CcNJx5qtM):
 
-> With python when I saw list comprehensions, I just loved it. It was elegant, and made me fall in love with the language. 
+> With python when I saw list comprehensions, I just loved it. It was elegant, and made me fall in love with the language.
 
 [weird personal note] Bizarre coincidence because when I looked up what list comprehensions are, they're the thing I remember seeing when I tutored someone in SIT742 in 2021 and thought the python code was quite amazing (those one-liners to filter lists). Anyway, turns out they were list comprehensions, the same thing that made lex fall in love with python.
 
@@ -160,7 +166,7 @@ evens = [x for x in range(10) if x % 2 == 0]
 formatted = [f"Number: {x}" for x in range(5)]
 ```
 
-Why are they called list comprehensions (from chatgpt convo above)? 
+Why are they called list comprehensions (from chatgpt convo above)?
 
 > The term "list comprehension" comes from the mathematical concept of set comprehension, which is used in set theory to define sets based on existing sets. In mathematics, set comprehensions allow the creation of a new set by applying a condition and/or transformation to each element of an existing set.
 
