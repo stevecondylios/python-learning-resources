@@ -45,6 +45,9 @@ Chris lattner:
 
 # Environment & Setup
 
+
+- Note: a newish tool called 'uv' (made in rust) is apparently great.
+  - It lets you skip the whole process of setting up a virtual env / pip by placing a shebang a the top of the python script and a /// script /// section to denote which packages and python version to use, and uv sets up the environment automatically with minimal fuss, caching, etc).
 - sc: I think you can install python packages via brew (just as you can with pip), but for whatever reason python could never find them ie. `import xyz` would fail. So my 'go to' is a virtual env every time and then use pip.
 - sc: if you want to use a python version other than the latest installed via brew, try running `brew search python@` to see what python versions are installed via brew. Then you can run commands (or start the interpreter) using `python3.11` (or whatever version you have, note no @ symbol when using it in the terminal). (also note, you can install any specific python version with brew by `brew install python@3.14` - I'm 99% sure)
   - I then used `python3.11 -m venv .venv` etc to create the virtual env as per below but using `python3.11` in place of `python`.
