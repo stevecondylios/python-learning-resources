@@ -91,6 +91,8 @@ source .venv/bin/activate
 # now that it's activated, run this to confirm
 which python
 
+python --version
+
 # It should return something like
 # /Users/st/python/myproject/.venv/bin/python
 # and not any other python installation like
@@ -111,7 +113,14 @@ deactivate
 Notes
 
 - Don't commit .venv to git. Instead use `pip freeze > requirements.txt` (**note*: venv has to be activated or else `pip freeze` will include very package on your *system* python, which you don't want).
-- Omit .venv from git with `echo "**/.venv" >> .gitignore`
+- Omit .venv from git with 
+
+```sh
+
+echo "**/.venv" >> .gitignore
+
+```
+
 - Install packages from requirement.txt with `pip install --requirement requirements.txt`
 - Note that `source .venv/bin/activate` seems to contain some paths which had to be modified manually when I rearranged a repo.
 
