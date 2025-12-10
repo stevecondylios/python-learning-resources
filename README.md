@@ -113,7 +113,7 @@ deactivate
 Notes
 
 - Don't commit .venv to git. Instead use `pip freeze > requirements.txt` (**note*: venv has to be activated or else `pip freeze` will include very package on your *system* python, which you don't want).
-- Omit .venv from git with 
+- Omit .venv from git with
 
 ```sh
 
@@ -123,6 +123,22 @@ echo "**/.venv" >> .gitignore
 
 - Install packages from requirement.txt with `pip install --requirement requirements.txt`
 - Note that `source .venv/bin/activate` seems to contain some paths which had to be modified manually when I rearranged a repo.
+
+
+### Notes on system python
+
+If you try to install something to your system installation (which I believe in my case is brew) it will give a very big warning. To do it anyway, you need the `--break-system-packages` argument (this installs 'pynvim' package):
+
+
+
+```sh
+
+python3 -m pip install --break-system-packages pynvim
+
+```
+
+Side note: if unsure about which pip command to use (e.g. pip, pip3 etc) I think this sort of solves that (assuming you know which python you're trying to use). E.g. python3 -m pip install will use the pip version for that installation of python.
+
 
 
 
